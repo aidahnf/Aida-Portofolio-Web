@@ -209,7 +209,7 @@ transition: 0.4s ease-in-out;
     position: relative;
 }
 .text-animation span::before{
-    content: "Front-end Web Developer ";
+    content: "Front-end Developer ";
     color: var(--main-color);
     animation: words 20s infinite;
 }
