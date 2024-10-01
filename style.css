@@ -232,20 +232,20 @@ transition: 0.4s ease-in-out;
 }
 @keyframes words{
     0%,
-    25%{
-        content: "Frontend Designer"
+    20%{
+        content: "Web Designer"
     }
-    26%,
-    50%{
+    21%,
+    40%{
         content: "UI / UX Designer";
     }
-    51%,
-    75%
+    41%,
+    60%
     {
-        content: "Frontend Web Developer"
+        content: "Frontend Developer"
     }
-    76%,
-    100%
+    61%,
+    80%
     {
         content: "DataBase Management";
     }
