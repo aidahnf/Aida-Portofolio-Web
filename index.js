@@ -20,6 +20,7 @@ function opentab(event, tabname){
 }
 
 
+
 window.onscroll = () => {
     sections.forEach(sec => {
         let top = window.scrollY;

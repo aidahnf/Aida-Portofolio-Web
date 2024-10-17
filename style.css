@@ -38,16 +38,16 @@ body{
 }
     
 .logo {
-        max-width: 150px; /* Ukuran maksimal logo */
+        max-width: 200px; /* Ukuran maksimal logo */
         height: auto;
         cursor: pointer;
         transition: 0.3s ease;
 }
     
-    .logo img {
-        width: 100%; /* Gambar mengikuti ukuran logo */
+.logo img {
+        width: 50%; /* Gambar mengikuti ukuran logo */
         height: auto; /* Tetap menjaga proporsi gambar */
-        max-width: 120px; /* Ukuran maksimal gambar */
+        max-width: 200px; /* Ukuran maksimal gambar */
     }
 .logo:hover{
     transform: scale(1.1);
@@ -209,7 +209,7 @@ transition: 0.4s ease-in-out;
     position: relative;
 }
 .text-animation span::before{
-    content: "Front-end Developer ";
+    content: "Frontend Developer ";
     color: var(--main-color);
     animation: words 20s infinite;
 }
@@ -247,7 +247,7 @@ transition: 0.4s ease-in-out;
     61%,
     80%
     {
-        content: "DataBase Management";
+        content: "Data Analyst and Big Data";
     }
 }
 
@@ -375,8 +375,9 @@ transition: 0.4s ease-in-out;
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    color: var(--main-color);
-    font-size: 15px;
+    /* color: var(--main-color); */
+    color: #51849c;
+    font-size: 19px;
 }
 
 .tab-contents{
@@ -384,6 +385,125 @@ transition: 0.4s ease-in-out;
 }
 .tab-contents.active-tab{
     display: block;
+}
+
+/* Skills List Container Styling */
+.tab-contents .skills-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Create two equal columns */
+    gap: 10px; /* Space between grid items */
+    list-style: none;
+    padding: 0;
+    max-width: 66.66vw; /* Use two-thirds of the screen width */
+    margin: 0 auto; /* Center the grid */
+}
+
+/* Individual List Item Styling */
+.tab-contents .skills-list li {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 2px 0;
+    padding: 10px;
+    border: 1px solid #e0e0e0; /* Border for separation */
+    border-radius: 6px; /* Rounded corners */
+    transition: transform 0.2s ease;
+}
+
+/* Slightly increase item size on hover for interaction */
+.tab-contents .skills-list li:hover {
+    transform: scale(1.01);
+}
+
+/* Icon Styling */
+.tab-contents .skill-icon {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: var(--main-color);
+}
+
+/* Skill Title Styling */
+.tab-contents .skill-title {
+    font-weight: 600;
+    color: var(--main-color);
+    font-size: 19px;
+}
+
+/* Skill Description Styling */
+.tab-contents .skill-description {
+    font-size: 14px;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* EXPERIENCE */
+
+/* Experience List Container Styling */
+.tab-contents .experience-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Create two equal columns */
+    gap: 10px; /* Space between grid items */
+    list-style: none;
+    padding: 0;
+    max-width: 66.66vw; /* Use two-thirds of the screen width */
+    margin: 0 auto; /* Center the grid */
+}
+
+/* Individual Experience Item Styling */
+.tab-contents .experience-list li {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 2px 0;
+    padding: 10px;
+    border: 1px solid #e0e0e0; /* Border for separation */
+    border-radius: 6px; /* Rounded corners */
+    transition: transform 0.2s ease;
+}
+
+/* Slightly increase item size on hover for interaction */
+.tab-contents .experience-list li:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+}
+
+/* Icon Styling */
+.tab-contents .experience-icon {
+    font-size: 18px;
+    margin-bottom: 8px; /* Space between icon and title */
+    color: var(--main-color); /* Match the icon color with your theme */
+}
+
+/* Experience Title Styling */
+.tab-contents .experience-title {
+    font-weight: 600;
+    color: var(--main-color);
+    font-size: 19px; /* Match the size to your skill-title */
+}
+
+/* Experience Description Styling */
+.tab-contents .experience-description {
+    font-size: 14px; /* Match the size to your skill-description */
+    color: #ffffff; /* Adjusted color to white as specified */
+    margin: 0; /* Remove extra spacing */
+}
+
+/* Experience Link Styling */
+.tab-contents .experience-link {
+    font-size: 13px;
+    color:#51849c ;
+    text-decoration: none;
+    font-weight: 500;
+    background-color: #e0e0e0; 
+    padding: 4px 8px; 
+    border-radius: 4px; 
+    transition: background-color 0.3s ease;
+    align-self: flex-end; 
+    margin-top: auto; 
+}
+
+.tab-contents .experience-link:hover {
+    background-color: var(--main-color); 
+    color: #fff; 
 }
 
 .inner{
@@ -543,9 +663,9 @@ transition: 0.4s ease-in-out;
     font-size: 10.5px;
     font-weight: bold;
     display: flex;
-    justify-content: center; /* Agar teks di tengah secara horizontal */
-    align-items: center; /* Agar teks di tengah secara vertikal */
-    line-height: 1; /* Atur line-height agar seimbang */
+    justify-content: center; 
+    align-items: center; 
+    line-height: 1; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -611,68 +731,6 @@ transition: 0.4s ease-in-out;
         padding: 2rem 30px;
     }
     
-}
-
-.contact-section {
-    background-color: #1e1e1e; /* Match the background color of the page */
-    padding: 2rem;
-    border-radius: 8px;
-    max-width: 400px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.contact-section h2 {
-    font-size: 1.8rem;
-    color: #fff;
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-}
-
-.contact-section p {
-    color: #bbb;
-    font-size: 1.1rem;
-}
-
-.contact-section a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.contact-section a:hover {
-    text-decoration: underline;
-}
-
-.contact-links {
-    margin-top: 1rem;
-}
-
-.contact-link {
-    display: block;
-    background-color: #2e2e2e;
-    padding: 0.8rem 1rem;
-    margin-bottom: 0.8rem;
-    border-radius: 8px;
-    font-size: 1.1rem;
-    text-decoration: none;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    transition: background-color 0.3s ease;
-}
-
-.contact-link:hover {
-    background-color: #444;
-}
-
-.github {
-    color: #ffcc00;
-}
-
-.linkedin, .instagram {
-    color: #3b5998; /* Similar color for LinkedIn and Instagram icons */
 }
 
 .footer{
@@ -845,5 +903,21 @@ transition: 0.4s ease-in-out;
     }
     .projects-box img{
         min-width: 42rem;
+    }
+}
+
+/* Untuk tablet */
+@media (max-width: 768px) {
+    .text-animation {
+        font-size: 28px;
+        min-width: 220px;
+    }
+}
+
+/* Untuk ponsel */
+@media (max-width: 480px) {
+    .text-animation {
+        font-size: 20px;
+        min-width: 180px;
     }
 }
